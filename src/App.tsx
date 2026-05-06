@@ -114,7 +114,10 @@ export default function App() {
             }
           }
         `;
-        return axios.post("/api/dnse", { query }).catch(() => null);
+        return axios.post("/api/dnse", { query }).catch((e) => {
+          console.error("API Error on date", d, e);
+          return null;
+        });
       });
 
       const results = await Promise.all(promises);
