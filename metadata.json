@@ -1,0 +1,6 @@
+{
+  "name": "Krx Ticks Data Visualizer",
+  "description": "Visualizes stock ticketing data from DNSE API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
